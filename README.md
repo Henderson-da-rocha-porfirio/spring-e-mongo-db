@@ -31,7 +31,7 @@
 ### - É compatível com de.flapdoodle.embed.mongo
 ### - Esta dependência é colocada no pom.
 ### - Anotações:
-#### i. @Document ( Opcional )
+#### i. @Document
 #### ii. @ID ( mas é opcional porque MongoDB gera o ID para tudo que você grava ou objetos criados.
 ### - Eles herdam de MongoDB ou do Mongo repositório em vez do JPA repository.
 ### - Na hora de criar o projeto, colocar as dependências (só digitar mongo que aparecerão as duas opções):
