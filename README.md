@@ -14,9 +14,9 @@
 > - Debois de baixado, é preciso fazer algumas configurações para ele funcionar no Windows:
 > 2. Configurar no Windows:
 > 
->>> a. Criar uma pasta "data" no disco "C" ou principal de seu SO.
+>> a. Criar uma pasta "data" no disco "C" ou principal de seu SO.
 > 
->>> b. Criar uma pasta "db" dentro de "data".
+>> b. Criar uma pasta "db" dentro de "data".
 >
 > 3. Entrando no Mongo pelo CMD, digite:
 ````
@@ -26,36 +26,48 @@ mongo
 ````
 db.help
 ````
-#### 3. Rodar o Servidor: mongod. Mas não depois de entrar no console do mongo. Se quiser, tem que ser antes.
-#### 4. Mostrar os databases:
+> 5. Rodar o Servidor:
+````
+mongod.
+````
+> 6. Mostrar os databases:
 ````
 show dbs
 
 ````
-#### 5. Criar um novo banco ou escolher detre os existentes:
+> 7. Criar um novo banco ou escolher detre os existentes:
 ````
 use mydb
 ````
-#### 6. Mostrar Collections:
+> 8. Mostrar Collections:
 
 ````
 show collections
 ````
-#### 7. Criar Tabela com a coluna:
+> 9. Criar Tabela com a coluna:
 ````
 db.produto.insert({"name":"mac","price":3000})
 ````
-#### 8. Achar a Tabela:
+> 10. Achar a Tabela:
 ````
-db.produto.find():
+db.produto.find()
+
 Resposta: { "_id" : ObjectId("6243aa9c5da52e55d6cacf2a"), "name" : "mac", "price" : 3000 }
-#### 9. Para mudar informação, usar o mesmo comando: db.produto.insert({"name":"windows","price":3000})
-#### 10. Outro método Find: db.produto.find().pretty()
-#### 11. Mostrar o Database: db
-#### 12. Mostrar as Collections: show collections
-#### 13. Drop:
-##### i. Tabela: db.produto.drop()
-##### ii. Database: db.dropDatabase()
+````
+> 11. Para update usar o mesmo comando: 
+````
+db.produto.insert({"name":"windows","price":3000})
+````
+> 12. Outro método Find:
+````
+>   db.produto.find().pretty()
+
+> 13. Mostrar o Database: db
+> 14. Mostrar as Collections: show collections
+> 15. Drop:
+>> i. Tabela: db.produto.drop()
+>> ii. Database: db.dropDatabase()
+
 ## Spring Boot Compatibilidade
 ### - É compatível com de.flapdoodle.embed.mongo
 ### - Esta dependência é colocada no pom.
