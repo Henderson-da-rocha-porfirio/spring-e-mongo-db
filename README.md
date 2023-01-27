@@ -60,14 +60,25 @@ db.produto.insert({"name":"windows","price":3000})
 ````
 > 12. Outro método Find:
 ````
->   db.produto.find().pretty()
-
-> 13. Mostrar o Database: db
-> 14. Mostrar as Collections: show collections
+  db.produto.find().pretty()
+````
+> 13. Mostrar o Database:
+````
+ db
+ ````
+> 14. Mostrar as Collections:
+````
+show collections
+````
 > 15. Drop:
->> i. Tabela: db.produto.drop()
->> ii. Database: db.dropDatabase()
-
+>> i. Tabela:
+````
+db.produto.drop()
+````
+>> ii. Database:
+````
+db.dropDatabase()
+````
 ## Spring Boot Compatibilidade
 ### - É compatível com de.flapdoodle.embed.mongo
 ### - Esta dependência é colocada no pom.
