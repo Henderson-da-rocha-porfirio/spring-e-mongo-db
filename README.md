@@ -30,6 +30,10 @@ help
 ````
 mongod.
 ````
+>> a. Conectando ao servidor na porta local 27017:
+````
+mongo .
+````
 > 6. Mostrar os databases:
 ````
 show dbs
@@ -79,6 +83,7 @@ db.produto.drop()
 ````
 db.dropDatabase()
 ````
+
 ## Spring Boot Compatibilidade
 ### - É compatível com de.flapdoodle.embed.mongo
 ### - Esta dependência é colocada no pom.
