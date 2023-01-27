@@ -24,7 +24,7 @@ mongo
 ````
 > 4. Help:
 ````
-db.help
+help
 ````
 > 5. Rodar o Servidor:
 ````
