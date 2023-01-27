@@ -62,7 +62,7 @@ Resposta: { "_id" : ObjectId("6243aa9c5da52e55d6cacf2a"), "name" : "mac", "price
 ````
 db.produto.insert({"name":"windows","price":3000})
 ````
-> 12. Outro método Find:
+> 12. Outro método Find para mostrar no console o formato em json:
 ````
   db.produto.find().pretty()
 ````
