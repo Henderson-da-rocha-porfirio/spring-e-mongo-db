@@ -10,16 +10,45 @@
 ### - Cada classe JAVA será mapeada por um documento ou uma collection de uma collection.
 ### - Cada objeto não será uma típica tabela mas será uma JSON ROW de uma particular collection.
 ## Instalando o Mongo
-###  - Download do Mongo: https://www.mongodb.com/try/download/community?tck=docs_server
-### - Debois de baixado, é preciso fazer algumas configurações para ele funcionar no Windows:
-#### 1. Configurar no Windows: Criar uma pasta no C: data e dentro desta uma outra pasta db.
-#### 2. Rodar comandos no cmd: mongo e se quiser saber os comandos: db.help
+> 1. [Download do Mongo]( https://www.mongodb.com/try/download/community?tck=docs_server)
+> - Debois de baixado, é preciso fazer algumas configurações para ele funcionar no Windows:
+> 2. Configurar no Windows:
+> 
+>>> a. Criar uma pasta "data" no disco "C" ou principal de seu SO.
+> 
+>>> b. Criar uma pasta "db" dentro de "data".
+>
+> 3. Entrando no Mongo pelo CMD, digite:
+````
+mongo
+````
+> 4. Help:
+````
+db.help
+````
 #### 3. Rodar o Servidor: mongod. Mas não depois de entrar no console do mongo. Se quiser, tem que ser antes.
-#### 4. Mostrar os databases: show dbs
-#### 5. Criar um novo banco ou escolher detre os existentes: use mydb
-#### 6. Mostrar Collections: show collections
-#### 7. Criar Tabela com a coluna: db.produto.insert({"name":"mac","price":3000})
-#### 8. Achar a Tabela: db.produto.find(): Resposta: { "_id" : ObjectId("6243aa9c5da52e55d6cacf2a"), "name" : "mac", "price" : 3000 }
+#### 4. Mostrar os databases:
+````
+show dbs
+
+````
+#### 5. Criar um novo banco ou escolher detre os existentes:
+````
+use mydb
+````
+#### 6. Mostrar Collections:
+
+````
+show collections
+````
+#### 7. Criar Tabela com a coluna:
+````
+db.produto.insert({"name":"mac","price":3000})
+````
+#### 8. Achar a Tabela:
+````
+db.produto.find():
+Resposta: { "_id" : ObjectId("6243aa9c5da52e55d6cacf2a"), "name" : "mac", "price" : 3000 }
 #### 9. Para mudar informação, usar o mesmo comando: db.produto.insert({"name":"windows","price":3000})
 #### 10. Outro método Find: db.produto.find().pretty()
 #### 11. Mostrar o Database: db
