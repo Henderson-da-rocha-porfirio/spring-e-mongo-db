@@ -83,7 +83,10 @@ db.produto.drop()
 ````
 db.dropDatabase()
 ````
-
+> 15. Para descobrir qual banco de dados é o atual, digite o comando db:
+````
+db
+````
 ## Spring Boot Compatibilidade
 ### - É compatível com de.flapdoodle.embed.mongo
 ### - Esta dependência é colocada no pom.
